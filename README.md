@@ -1,1 +1,7 @@
 # Algorithms-Design
+We have the task of developing an algorithm for an advanced code editor that automatically corrects syntax errors in programming languages. It is assumed that we receive a clear specification of the valid large and very large data sets randomly generated syntax of the programming language in the form of a ”rule” and a code fragment that contains syntax errors, i.e., does not conform to that rule.
+Our objective is to build an algorithm that determines the minimum number of operations required to transform the code fragment into one that complies with the given rule. These operations may include character substitutions, insertions, or deletions.
+Let’s take a concrete example to illustrate the problem: let’s assume we have the following syntax rule for function declarations in the programming language:
+”Every function must start with the keyword ”func”, followed by the function name enclosed in parentheses.” An example of a valid function declaration would be ”func(myFunction)”.
+Here’s how the situation looks: Given code fragment: ”fnuc(myFuncion”
+Our objective is to find the minimum number of operations required to correct the code fragment so that it matches the pattern defined by the rule. These operations may include, for example, reversing the characters ”n” and ”u” to obtain ”func”, then inserting the missing characters ”t” and ”)”, so that we obtain ”func(myFunc)” according to the given rule.
